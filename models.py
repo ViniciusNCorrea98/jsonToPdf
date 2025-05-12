@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, Text, DateTime
-from database import Base
+from db import Base
 
 class AgendaDisparos(Base):
     __tablename__ = "agenda_disparos"
@@ -8,14 +8,29 @@ class AgendaDisparos(Base):
     contact_id = Column(Integer)
     name = Column(String)
     telefone = Column(String)
+    account_id = Column(Integer)
     inbox_id = Column(Integer)
     imagem = Column(Boolean)
     audio = Column(Boolean)
     video = Column(Boolean)
     texto = Column(Text)
+    apikey = Column(String)
+    instancia = Column(String)
+    url_evo = Column(String)
+    num_colaborador = Column(String)
+    img_url = Column(String)
+    audio_url = Column(String)
+    video_url = Column(String)
     status = Column(String)
+    hora_envio = Column(DateTime)
+    created_at = Column(DateTime)
     campanha = Column(String)
     captacao = Column(String)
     anuncio = Column(String)
+    execution_id = Column(Integer)
+    agent_id = Column(Integer)
+    nome_colaborador_artigo = Column(String)
     nome_colaborador = Column(String)
+    pin = Column(String)
+    revisao = Column(Boolean)
     send_at = Column(DateTime)
