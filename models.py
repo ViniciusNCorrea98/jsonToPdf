@@ -34,3 +34,4 @@ class AgendaDisparos(Base):
     pin = Column(String)
     revisao = Column(Boolean)
     send_at = Column(DateTime)
+    is_available = Column(Boolean)
